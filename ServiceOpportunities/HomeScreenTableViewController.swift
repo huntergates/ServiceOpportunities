@@ -8,9 +8,9 @@ class HomeScreenTableViewController: UITableViewController {
     
     var locations = [6.0, 7.4, 3.2, 9.1, 2.7, 1.2]
     
-    var phoneNumber = ["12312", "", "", "", "", ""]
+    var phoneNumber = ["1231212321", "3222410150", "5558974931", "3221323096", "8133265989", "8134180818"]
     
-    var images = ["Image", "teslacompany", "", "", "", ""]
+    var images = ["walmart", "teslacompany", "", "", "", ""]
     
     
     override func viewDidLoad() {
