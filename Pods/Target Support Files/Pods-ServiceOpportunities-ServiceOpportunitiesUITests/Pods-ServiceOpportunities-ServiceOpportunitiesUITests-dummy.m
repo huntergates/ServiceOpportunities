@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ServiceOpportunities_ServiceOpportunitiesUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ServiceOpportunities_ServiceOpportunitiesUITests
+@end
