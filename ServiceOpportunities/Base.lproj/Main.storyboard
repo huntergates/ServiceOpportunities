@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,9 +41,49 @@
                             <outlet property="delegate" destination="S2i-sg-Acv" id="uK4-lG-U89"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="acm-wn-zkl" kind="show" identifier="segueToDetailView" id="bZ5-a8-q46"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTq-UX-BDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ilr-lU-CQh">
+            <objects>
+                <viewController id="C1b-N8-UiV" customClass="DetailViewController" customModule="ServiceOpportunities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p2b-Og-1HX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="png-gQ-Cv9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5X9-Yf-RiD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNc-Fq-BfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="32.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gnU-Ug-dnd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="acm-wn-zkl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5HW-HF-u6q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oog-Iy-hxO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="C1b-N8-UiV" kind="relationship" relationship="rootViewController" id="reQ-Sz-4Vx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oX-Dq-jkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.8550724637682" y="32.8125"/>
         </scene>
     </scenes>
 </document>

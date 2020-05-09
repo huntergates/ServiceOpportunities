@@ -40,12 +40,21 @@ class HomeScreenTableViewController: UITableViewController {
         
         cell?.cellBackground.backgroundColor = UIColor(red: 171.0/255.0, green: 177.0/255.0, blue: 186.0/255.0, alpha: 1.0)
         
+        performSegue(withIdentifier: "segueToDetailView", sender: self)
+        
         switch indexPath.row {
         case 0:
             print("Blueberries")
         default:
             print("Yogurt")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nav = segue.destination as? UINavigationController
+        
+        let detailViewController = nav?.topViewController as? DetailViewController
+        detailViewController?.companyName = companyNames[1]
     }
 }
 

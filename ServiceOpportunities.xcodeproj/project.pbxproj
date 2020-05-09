@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004DC3F624671D4800F8B95B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004DC3F524671D4800F8B95B /* DetailViewController.swift */; };
 		006C1786241EBAAD00D688DB /* CustomMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C1785241EBAAD00D688DB /* CustomMenuTableViewCell.swift */; };
 		0095EA69241581F000E8CE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095EA68241581F000E8CE57 /* AppDelegate.swift */; };
 		0095EA6B241581F000E8CE57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095EA6A241581F000E8CE57 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004DC3F524671D4800F8B95B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		006C1785241EBAAD00D688DB /* CustomMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuTableViewCell.swift; sourceTree = "<group>"; };
 		0095EA65241581F000E8CE57 /* ServiceOpportunities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceOpportunities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0095EA68241581F000E8CE57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				0095EA74241581F900E8CE57 /* Info.plist */,
 				0095EA962415830E00E8CE57 /* HomeScreenTableViewController.swift */,
 				006C1785241EBAAD00D688DB /* CustomMenuTableViewCell.swift */,
+				004DC3F524671D4800F8B95B /* DetailViewController.swift */,
 			);
 			path = ServiceOpportunities;
 			sourceTree = "<group>";
@@ -158,7 +161,6 @@
 				2C0E4379E2289E0EDC816040 /* Pods-ServiceOpportunitiesTests.debug.xcconfig */,
 				C2B33CAE9F547CB467E748AA /* Pods-ServiceOpportunitiesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -413,6 +415,7 @@
 			files = (
 				0095EA972415830E00E8CE57 /* HomeScreenTableViewController.swift in Sources */,
 				0095EA6B241581F000E8CE57 /* ViewController.swift in Sources */,
+				004DC3F624671D4800F8B95B /* DetailViewController.swift in Sources */,
 				0095EA69241581F000E8CE57 /* AppDelegate.swift in Sources */,
 				006C1786241EBAAD00D688DB /* CustomMenuTableViewCell.swift in Sources */,
 			);
