@@ -63,12 +63,6 @@ class CustomMenuTableViewCell: UITableViewCell {
         cellBackground.backgroundColor = UIColor(red: 171.0/255.0, green: 245.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         cellBackground.layer.cornerRadius = 10
     }
-
 }
-//How to make the cells look bubbly
 
-//Add a view that is the same size as the cell. (background view) Make constraints for the cell(Same height, leading, etc) Equal to superView
-//Make it a different color to know that it's there
-//Use .layer.cornerRadius = 10 or 5. Test it
-//Inset on constraints from the sides, top, and bottom
 
