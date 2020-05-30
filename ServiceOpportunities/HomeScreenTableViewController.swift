@@ -2,6 +2,30 @@ import Foundation
 import UIKit
 import SnapKit
 
+class Company {
+    var companyName: String
+    
+    var companyPhone: String
+    
+    var distance: Int
+    
+    var address: String
+    
+    var image: UIImage
+    
+    var companyDescription: String
+    
+    init(companyName: String, companyPhone: String, distance: Int, address: String, image: UIImage, companyDescription: String) {
+        self.companyName = companyName
+        self.address = address
+        self.companyPhone = companyPhone
+        self.distance = distance
+        self.image = image
+        self.companyDescription = companyDescription
+    }
+}
+
+
 class HomeScreenTableViewController: UITableViewController {
     
     var companyNames = ["Walmart", "Tesla", "Apple", "Google", "Dunder Mifflin", "Netflix"]
@@ -10,7 +34,7 @@ class HomeScreenTableViewController: UITableViewController {
     
     var phoneNumber = ["1231212321", "3222410150", "5558974931", "3221323096", "8133265989", "8134180818"]
     
-    var images = ["walmart", "teslacompany", "", "", "", ""]
+    var images = [UIImage(named: "walmart"), UIImage(named: "teslacompany"), UIImage(named: "teslacompany"), UIImage(named: "teslacompany"), UIImage(named: "teslacompany"), UIImage(named: "teslacompany")]
     
     
     override func viewDidLoad() {
@@ -26,7 +50,7 @@ class HomeScreenTableViewController: UITableViewController {
         }
         print(indexPath.row)
         cell.selectionStyle = .none
-        cell.setupViews(name: companyNames[indexPath.row], location: String("\(locations[indexPath.row]) km away"), image: images[indexPath.row], phone: "cell: \(phoneNumber[indexPath.row])")
+        cell.setupViews(name: companyNames[indexPath.row], location: String("\(locations[indexPath.row]) km away"), image: images[indexPath.row] ?? UIImage(), phone: "cell: \(phoneNumber[indexPath.row])")
         return cell
     }
     
@@ -55,6 +79,9 @@ class HomeScreenTableViewController: UITableViewController {
        
         let detailViewController = segue.destination as? DetailViewController
         detailViewController?.companyName = "hello"
+        detailViewController?.imageCompany = UIImage(named: "teslacompany") ?? UIImage()
+        detailViewController?.locationAddress = "5942 West Road Boulevard. Jupiter, Florida"
+        detailViewController?.phoneNumber = "888-152-9578"
     }
 }
 

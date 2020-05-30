@@ -17,7 +17,7 @@ class CustomMenuTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func setupViews(name: String, location: String, image: String, phone: String) {
+    func setupViews(name: String, location: String, image: UIImage, phone: String) {
         contentView.addSubview(cellBackground)
         contentView.addSubview(photoImage)
         contentView.addSubview(companyNameLabel)
@@ -54,7 +54,7 @@ class CustomMenuTableViewCell: UITableViewCell {
         photoImage.backgroundColor = UIColor.red
         photoImage.layer.cornerRadius = 50
         photoImage.clipsToBounds = true
-        photoImage.image = UIImage(named: image)
+        photoImage.image = image
         
         cellBackground.snp.makeConstraints { (make) in
             make.top.bottom.equalToSuperview().inset(10)
