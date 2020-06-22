@@ -17,6 +17,7 @@
 		0095EA89241581F900E8CE57 /* ServiceOpportunitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095EA88241581F900E8CE57 /* ServiceOpportunitiesUITests.swift */; };
 		0095EA972415830E00E8CE57 /* HomeScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095EA962415830E00E8CE57 /* HomeScreenTableViewController.swift */; };
 		00BE1BCF2495518C00B8AB23 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BE1BCE2495518C00B8AB23 /* Company.swift */; };
+		00BE1BD62495592300B8AB23 /* CompanyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BE1BD52495592300B8AB23 /* CompanyServices.swift */; };
 		2EF88E983AC4AD1D94B549DB /* Pods_ServiceOpportunitiesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA308887124D416285CBB05 /* Pods_ServiceOpportunitiesTests.framework */; };
 		4AA1A805D29B5BF3332D84CD /* Pods_ServiceOpportunities_ServiceOpportunitiesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477965D6426379EB7FD11EEC /* Pods_ServiceOpportunities_ServiceOpportunitiesUITests.framework */; };
 		DC7A9C0BF5DEBF475F2EE1EE /* Pods_ServiceOpportunities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC6E117C7A1AC5B0565859A /* Pods_ServiceOpportunities.framework */; };
@@ -56,6 +57,7 @@
 		0095EA8A241581F900E8CE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0095EA962415830E00E8CE57 /* HomeScreenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewController.swift; sourceTree = "<group>"; };
 		00BE1BCE2495518C00B8AB23 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		00BE1BD52495592300B8AB23 /* CompanyServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyServices.swift; sourceTree = "<group>"; };
 		2B29283712072008F3A05040 /* Pods-ServiceOpportunities-ServiceOpportunitiesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceOpportunities-ServiceOpportunitiesUITests.release.xcconfig"; path = "Target Support Files/Pods-ServiceOpportunities-ServiceOpportunitiesUITests/Pods-ServiceOpportunities-ServiceOpportunitiesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2C0E4379E2289E0EDC816040 /* Pods-ServiceOpportunitiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceOpportunitiesTests.debug.xcconfig"; path = "Target Support Files/Pods-ServiceOpportunitiesTests/Pods-ServiceOpportunitiesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		313B2BED66DE582C7C685655 /* Pods-ServiceOpportunities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceOpportunities.release.xcconfig"; path = "Target Support Files/Pods-ServiceOpportunities/Pods-ServiceOpportunities.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		0095EA67241581F000E8CE57 /* ServiceOpportunities */ = {
 			isa = PBXGroup;
 			children = (
+				00BE1BD4249558DA00B8AB23 /* Networking */,
 				00BE1BD2249551FC00B8AB23 /* Views */,
 				00BE1BD1249551F200B8AB23 /* Models */,
 				00BE1BD0249551E000B8AB23 /* Controllers */,
@@ -173,6 +176,14 @@
 				006C1785241EBAAD00D688DB /* CustomMenuTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		00BE1BD4249558DA00B8AB23 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				00BE1BD52495592300B8AB23 /* CompanyServices.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		2B32BF2440FA94ABE13189C7 /* Pods */ = {
@@ -438,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0095EA972415830E00E8CE57 /* HomeScreenTableViewController.swift in Sources */,
+				00BE1BD62495592300B8AB23 /* CompanyServices.swift in Sources */,
 				004DC3F624671D4800F8B95B /* DetailViewController.swift in Sources */,
 				0095EA69241581F000E8CE57 /* AppDelegate.swift in Sources */,
 				00BE1BCF2495518C00B8AB23 /* Company.swift in Sources */,
