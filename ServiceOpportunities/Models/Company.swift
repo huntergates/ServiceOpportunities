@@ -3,9 +3,9 @@ import UIKit
 class Company {
     var companyName: String
     
-    var companyPhone: String
+    var companyContact: String
     
-    var distance: Int
+    var distance: String
     
     var address: String
     
@@ -13,10 +13,10 @@ class Company {
     
     var companyDescription: String
     
-    init(companyName: String, companyPhone: String, distance: Int, address: String, image: UIImage, companyDescription: String) {
+    init(companyName: String, companyContact: String, distance: String, address: String, image: UIImage, companyDescription: String) {
         self.companyName = companyName
         self.address = address
-        self.companyPhone = companyPhone
+        self.companyContact = companyContact
         self.distance = distance
         self.image = image
         self.companyDescription = companyDescription

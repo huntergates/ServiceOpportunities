@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,9 +30,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="C1b-N8-UiV" kind="show" identifier="segueToDetailView" id="H3W-66-Cug"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,22 +42,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTq-UX-BDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="78.348214285714278"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="ilr-lU-CQh">
-            <objects>
-                <viewController id="C1b-N8-UiV" customClass="DetailViewController" customModule="ServiceOpportunities" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p2b-Og-1HX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="png-gQ-Cv9"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5X9-Yf-RiD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pNc-Fq-BfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1845" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OFe-Xi-ZCU">

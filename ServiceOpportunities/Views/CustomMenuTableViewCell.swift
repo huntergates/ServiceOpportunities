@@ -5,13 +5,13 @@ class CustomMenuTableViewCell: UITableViewCell {
 
     private let companyNameLabel = UILabel()
     
-    private let locationLabel = UILabel()
+    private let distanceLabel = UILabel()
     
     private let photoImage = UIImageView()
     
     let cellBackground = UIView()
     
-    private let phoneNumberLabel = UILabel()
+    //private let phoneNumberLabel = UILabel()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,31 +21,24 @@ class CustomMenuTableViewCell: UITableViewCell {
         contentView.addSubview(cellBackground)
         contentView.addSubview(photoImage)
         contentView.addSubview(companyNameLabel)
-        contentView.addSubview(locationLabel)
-        contentView.addSubview(phoneNumberLabel)
+        contentView.addSubview(distanceLabel)
         
-        companyNameLabel.textAlignment = .left
-        companyNameLabel.font = UIFont(name: "Optima-Regular", size: 24.0)
+        companyNameLabel.textAlignment = .center
+        companyNameLabel.font = UIFont(name: "Optima-Regular", size: 35.0)
+        companyNameLabel.numberOfLines = 0
         companyNameLabel.text = company.companyName
         companyNameLabel.snp.makeConstraints { (make) in
-            make.leading.equalToSuperview().offset(20)
-            make.top.equalToSuperview().offset(30)
+            make.leading.equalToSuperview().offset(35)
+            make.top.bottom.equalToSuperview().offset(4)
+            make.trailing.equalTo(photoImage.snp.leading).offset(15)
         }
         
-        phoneNumberLabel.textAlignment = .left
-        phoneNumberLabel.font = UIFont(name: "Optima-Regular", size: 12.0)
-        phoneNumberLabel.text = company.companyPhone
-        phoneNumberLabel.snp.makeConstraints { (make) in
-            make.leading.equalToSuperview().offset(20)
-            make.top.equalTo(companyNameLabel).offset(30)
-        }
-        
-        locationLabel.textAlignment = .left
-        locationLabel.font = UIFont(name: "Optima-Regular", size: 12.0)
-        locationLabel.text = company.address
-        locationLabel.snp.makeConstraints { (make) in
-            make.leading.equalToSuperview().offset(20)
-            make.bottom.equalTo(cellBackground.snp.bottom).inset(10)
+        distanceLabel.textAlignment = .left
+        distanceLabel.font = UIFont(name: "Optima-Regular", size: 14.0)
+        distanceLabel.text = company.distance
+        distanceLabel.snp.makeConstraints { (make) in
+            make.leading.equalTo(cellBackground.snp.leading).offset(15)
+            make.bottom.equalTo(cellBackground.snp.bottom).inset(7)
         }
         
         photoImage.snp.makeConstraints { (make) in
