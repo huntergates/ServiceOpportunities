@@ -6,11 +6,21 @@ class SettingsViewController: UIViewController {
     let languageSwitch = UISwitch(frame: .zero)
     let languageLabel = UILabel()
     let aboutMe = UILabel()
+    var isSpanish = false
     
     override func viewDidLoad() {
         view.backgroundColor = .white
         setupViews()
+        isSpanish = UserDefaults.standard.bool(forKey: "Language")
+        languageSwitch.addTarget(self, action: #selector(switchChanged), for: .touchUpInside)
+        languageSwitch.setOn(isSpanish, animated: true)
     }
+    
+    @objc func switchChanged() {
+        isSpanish = languageSwitch.isOn
+        UserDefaults.standard.set(isSpanish, forKey: "Language")
+    }
+    
     
     func setupViews() {
         view.addSubview(languageSwitch)
